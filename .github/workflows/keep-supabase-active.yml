@@ -1,0 +1,48 @@
+name: Keep Supabase Active
+
+# Pings Supabase twice weekly so Free-tier projects don't pause after ~7 days
+# of inactivity. Any API request resets the timer.
+#
+# Required repo secrets (Settings → Secrets and variables → Actions):
+#   SUPABASE_URL       — e.g. https://xxxx.supabase.co
+#   SUPABASE_ANON_KEY  — anon/public key from Supabase dashboard
+
+on:
+  schedule:
+    # Sunday and Wednesday at 12:00 UTC
+    - cron: "0 12 * * 0,3"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${SUPABASE_URL}" ] || [ -z "${SUPABASE_ANON_KEY}" ]; then
+            echo "::error::Missing SUPABASE_URL or SUPABASE_ANON_KEY repo secrets."
+            exit 1
+          fi
+
+          url="${SUPABASE_URL%/}/rest/v1/profiles?select=id&limit=1"
+          http_code=$(curl -sS -o /tmp/supabase-ping.json -w "%{http_code}" \
+            -H "apikey: ${SUPABASE_ANON_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_ANON_KEY}" \
+            "${url}")
+
+          echo "Supabase ping HTTP ${http_code}"
+          cat /tmp/supabase-ping.json || true
+          echo
+
+          # Any successful API hit counts — 200/401/406 still reach the project
+          if [ "${http_code}" -ge 500 ] || [ "${http_code}" -eq 000 ]; then
+            echo "::error::Supabase ping failed (HTTP ${http_code})"
+            exit 1
+          fi
+
+          echo "Keep-alive ping OK"

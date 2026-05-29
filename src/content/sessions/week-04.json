@@ -1,0 +1,103 @@
+{
+  "week": 4,
+  "title": "Hallucinations, Trust & Token Limits",
+  "plainEnglishSummary": "Why AI makes things up, when to verify, and what tokens and context windows mean for your business.",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "This week is about trust — when AI is lying to you with confidence, when you can relax, and what tokens actually mean for your day-to-day work.\n\nHallucination is when AI states something false like it's absolutely true. It predicted plausible-sounding text; it didn't verify facts. Common triggers: asking for citations it can't look up, niche facts, specific numbers, or \"what's the latest\" without live data connected.\n\nSo when do you trust it versus verify? Trust AI for drafts, brainstorming, rewriting tone, structure, checklists built from notes you pasted in. Always verify legal, medical, and financial numbers, stats, quotes, names, dates — and anything customer-facing before you hit send.\n\nLast piece — tokens and context windows. The context window is how much text the model can see at once: your prompt, its reply, and the chat history. Long PDFs, long threads, or huge paste-ins can hit limits. The model may forget the beginning or truncate. Rule of thumb: paste what matters, and split giant documents into chunks.\n\nThat's it for this week. Jump into the activity when you're ready.",
+    "sections": [
+      {
+        "heading": "Why AI hallucinates",
+        "paragraphs": [
+          "Hallucination means AI states something false with full confidence. It predicted plausible-sounding text, not verified facts.",
+          "Common triggers: citations it can't look up, niche facts, specific numbers, or \"latest info\" without live data."
+        ]
+      },
+      {
+        "heading": "When to trust vs verify",
+        "paragraphs": [
+          "Trust for drafts, brainstorming, rewriting tone, structure, and checklists from your own pasted notes.",
+          "Always verify legal, medical, financial numbers, stats, quotes, names, dates, and anything customer-facing without review."
+        ]
+      },
+      {
+        "heading": "Tokens & context windows",
+        "paragraphs": [
+          "Context window is how much text the model can see at once — your prompt, its reply, and chat history.",
+          "Long PDFs, long threads, or huge paste-ins can hit limits. The model may forget the beginning or truncate.",
+          "Rule of thumb: paste what matters; split giant docs into chunks."
+        ]
+      }
+    ]
+  },
+  "type": "quiz",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "When did AI confidently give you wrong info?",
+    "What do you always verify before sending to a client?"
+  ],
+  "steps": [
+    {
+      "question": "AI 'hallucination' means…",
+      "options": [
+        "Confident false information — plausible but wrong",
+        "The AI is overheating",
+        "A visual glitch in the app"
+      ],
+      "correctIndex": 0,
+      "feedback": "It predicted text that sounds right — not facts it checked."
+    },
+    {
+      "question": "Which task is LOW risk to trust AI's first draft?",
+      "options": [
+        "Brainstorming 10 email subject lines from your brief",
+        "Quoting tax law for a client",
+        "Publishing stock prices without checking"
+      ],
+      "correctIndex": 0,
+      "feedback": "Creative drafts from your context = low stakes. You pick and edit."
+    },
+    {
+      "question": "You ask AI for 'latest industry stats' without web access. Best approach?",
+      "options": [
+        "Verify every stat independently — assume hallucination risk",
+        "Publish immediately — AI is always current",
+        "Ask again until it sounds confident"
+      ],
+      "correctIndex": 0,
+      "feedback": "Without live data, AI guesses from training — dates and numbers drift."
+    },
+    {
+      "question": "Why do different models give different answers?",
+      "options": [
+        "Different training data, design, and randomness in prediction",
+        "One model is always lying",
+        "Your keyboard changes the model"
+      ],
+      "correctIndex": 0,
+      "feedback": "Models differ — compare outputs for high-stakes work."
+    },
+    {
+      "question": "A 'context window' is…",
+      "options": [
+        "How much text the model can process at once",
+        "Your browser window size",
+        "The number of employees using AI"
+      ],
+      "correctIndex": 0,
+      "feedback": "Too much pasted text = model may miss or truncate early parts."
+    },
+    {
+      "question": "You need to summarize a 80-page contract. Smartest approach?",
+      "options": [
+        "Chunk it by section with clear prompts per chunk",
+        "Paste all 80 pages once and hope",
+        "Skip reading — AI knows law"
+      ],
+      "correctIndex": 0,
+      "feedback": "Chunk + summarize + merge beats one giant paste."
+    }
+  ],
+  "takeaway": "AI hallucinates plausible text. Trust drafts; verify facts. Watch token limits on long docs."
+}

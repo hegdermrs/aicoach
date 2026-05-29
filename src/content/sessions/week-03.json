@@ -1,0 +1,102 @@
+{
+  "week": 3,
+  "title": "How AI Generates Text & What Prompts Do",
+  "plainEnglishSummary": "The 'next word' trick — and why your prompt is the steering wheel for every AI output.",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "Okay — here's how AI actually generates text, and why your prompt matters more than which model you pick.\n\nAI doesn't plan an essay in its head first. It generates one word at a time — or really, one token at a time — each time picking the most likely next piece based on patterns it learned from training. That's why it can sound brilliant and completely wrong in the same paragraph. It's predicting plausible text, not verifying truth.\n\nSo what is a prompt? It's your steering wheel. Role, context, goal, format, examples — that's what goes in a good prompt. Weak prompt means generic output and you waste time editing. Strong prompt means a usable first draft and you save twenty minutes.\n\nThink of the model as a fast intern. Vague instructions get vague work. Specific instructions get something you can actually use.\n\nThis week, pay attention to one prompt you use regularly and ask: could I be more specific? Alright — activity time.",
+    "sections": [
+      {
+        "heading": "The 'next word' trick",
+        "paragraphs": [
+          "AI doesn't plan an essay in its head. It generates one word at a time, picking the most likely next piece based on patterns it learned.",
+          "That's why it can sound brilliant and wrong in the same paragraph — it's predicting plausible text, not verifying truth."
+        ]
+      },
+      {
+        "heading": "What a prompt really is",
+        "paragraphs": [
+          "A prompt is your steering wheel: role, context, goal, format, and examples.",
+          "Weak prompt means generic output and wasted editing time. Strong prompt means a usable first draft and twenty minutes saved.",
+          "Think of the model as a fast intern — vague instructions get vague work."
+        ]
+      }
+    ]
+  },
+  "type": "promptFix",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "What's one prompt you use weekly that could be sharper?",
+    "Where did generic AI output waste your time last month?"
+  ],
+  "steps": [
+    {
+      "weakPrompt": "Write something for my business.",
+      "question": "What's the main problem?",
+      "options": [
+        "No role, audience, goal, or format",
+        "Too many exclamation marks",
+        "Prompt is too short to type"
+      ],
+      "correctIndex": 0,
+      "feedback": "AI will guess everything — you'll edit for 20 minutes."
+    },
+    {
+      "weakPrompt": "You are a B2B sales coach. Draft a 120-word follow-up email to a prospect who downloaded our pricing guide but didn't book a call. Professional tone, one clear CTA to schedule 15 minutes.",
+      "question": "Why does this prompt work?",
+      "options": [
+        "It includes role, context, length, tone, and a specific CTA",
+        "It uses the word 'coach'",
+        "It's under 50 words"
+      ],
+      "correctIndex": 0,
+      "feedback": "Role + context + constraints = usable draft on first try."
+    },
+    {
+      "weakPrompt": "Make this better: our product is good.",
+      "question": "What's missing for a useful rewrite?",
+      "options": [
+        "Who the audience is, what 'better' means, and desired format",
+        "More adjectives",
+        "A longer product name"
+      ],
+      "correctIndex": 0,
+      "feedback": "'Better' is meaningless without audience and goal."
+    },
+    {
+      "weakPrompt": "Summarize this meeting transcript in 5 bullet points for my ops manager. Flag any decisions that need my approval.",
+      "question": "This prompt is strong because…",
+      "options": [
+        "It defines audience, format, and a specific instruction",
+        "It asks AI to think like a human",
+        "It guarantees perfect accuracy"
+      ],
+      "correctIndex": 0,
+      "feedback": "Specific format + audience + special instruction = high-value output."
+    },
+    {
+      "weakPrompt": "Help with marketing.",
+      "question": "Best fix?",
+      "options": [
+        "Add: channel (email/LinkedIn), audience, goal, tone, length",
+        "Remove the word marketing",
+        "Switch to a different AI brand"
+      ],
+      "correctIndex": 0,
+      "feedback": "Marketing spans everything — narrow the task."
+    },
+    {
+      "weakPrompt": "Act as my executive assistant. Every Friday I paste my calendar export. List conflicts, prep I need for Monday meetings, and draft decline text for low-priority invites.",
+      "question": "Why is giving AI a recurring 'role' powerful?",
+      "options": [
+        "You reuse the same frame weekly — less re-explaining, consistent output",
+        "AI remembers forever without you pasting context",
+        "It removes the need to review output"
+      ],
+      "correctIndex": 0,
+      "feedback": "Reusable role + routine = workflow. You still paste context and review."
+    }
+  ],
+  "takeaway": "AI predicts word by word. Your prompt steers the result — role, context, goal, format."
+}

@@ -1,0 +1,103 @@
+{
+  "week": 11,
+  "title": "AI Myth-Busting & FAQ",
+  "plainEnglishSummary": "Honest answers: replacement fears, data safety, how fast things change, and common mastermind questions.",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "FAQ week — the questions I hear in every mastermind, answered straight.\n\nWill AI replace my team? AI replaces tasks, not whole people — especially boring first drafts and repetitive research. Owners who win use AI to make small teams more leveraged, not to cut core relationships and judgment. If someone only did copy-paste work, that role evolves. It doesn't vanish overnight.\n\nIs my data safe? Depends on the tool, your settings, and what you paste. Use business or team tiers, turn off training where offered, redact personal info. No cloud AI is perfectly private — treat it like email. Don't send what you wouldn't want logged.\n\nHow fast is this changing? Models and tools update constantly — but the fundamentals stay stable: prompts, workflows, ROI, guardrails. Learn patterns, not one trick that expires next month. The live mastermind is where edge cases get answered.\n\nBring your real questions Thursday. Activity time.",
+    "sections": [
+      {
+        "heading": "Will AI replace my team?",
+        "paragraphs": [
+          "AI replaces tasks, not whole people — especially boring first drafts and repetitive research.",
+          "Owners who win use AI to make small teams more leveraged, not to cut core relationships and judgment.",
+          "If someone only did copy-paste work, that role evolves — not vanishes overnight."
+        ]
+      },
+      {
+        "heading": "Is my data safe?",
+        "paragraphs": [
+          "Depends on tool, settings, and what you paste. Use business/team tiers, turn off training where offered, redact PII.",
+          "No cloud AI is perfectly private — treat it like email: don't send what you wouldn't log."
+        ]
+      },
+      {
+        "heading": "How fast is this changing?",
+        "paragraphs": [
+          "Models and tools update constantly — but fundamentals like prompts, workflows, ROI, and guardrails stay stable.",
+          "Learn patterns, not one trick that expires next month. Mastermind Q&A is where edge cases get answered live."
+        ]
+      }
+    ]
+  },
+  "type": "quiz",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "What myth did you believe before this program?",
+    "What's your biggest remaining question for live Q&A?"
+  ],
+  "steps": [
+    {
+      "question": "'AI will replace my whole team next year' is…",
+      "options": [
+        "Mostly myth — it replaces tasks; judgment and relationships stay human",
+        "Definitely true for all businesses",
+        "Impossible — AI can't write"
+      ],
+      "correctIndex": 0,
+      "feedback": "Leverage small teams; don't fire your closers and strategists."
+    },
+    {
+      "question": "Best data safety habit for a small team?",
+      "options": [
+        "Approved tools, redact PII, review external sends",
+        "Paste everything for best results",
+        "Share one login with the whole internet"
+      ],
+      "correctIndex": 0,
+      "feedback": "Treat AI input like any sensitive comms channel."
+    },
+    {
+      "question": "Will what you learn be outdated in 30 days?",
+      "options": [
+        "Tools change fast — fundamentals (prompts, ROI, workflows) last",
+        "Everything expires immediately — don't learn",
+        "Nothing ever changes in AI"
+      ],
+      "correctIndex": 0,
+      "feedback": "Patterns > single feature. Mastermind keeps you current."
+    },
+    {
+      "question": "Owner says 'we can't use AI — it's cheating.'",
+      "options": [
+        "Reframe: it's a calculator for words — still need your strategy",
+        "Agree and ban all technology",
+        "Replace the owner with AI"
+      ],
+      "correctIndex": 0,
+      "feedback": "Calculator for language, not a substitute for leadership."
+    },
+    {
+      "question": "Someone claims one AI tool 'does everything perfectly.'",
+      "options": [
+        "Skeptical — ask for workflow, cost, and failure cases",
+        "Buy immediately",
+        "Assume they're lying about everything"
+      ],
+      "correctIndex": 0,
+      "feedback": "No tool does everything. Ask how and where it breaks."
+    },
+    {
+      "question": "Best use of live mastermind Q&A time?",
+      "options": [
+        "Your specific workflows, numbers, and stuck points",
+        "Generic 'tell me about AI' with no context",
+        "Debate sci-fi only"
+      ],
+      "correctIndex": 0,
+      "feedback": "Bring real workflows — get real answers from Kai and the room."
+    }
+  ],
+  "takeaway": "Tasks not people. Safe habits matter. Fundamentals last. Bring real questions live."
+}

@@ -1,0 +1,107 @@
+{
+  "week": 8,
+  "title": "Voice AI, No-Code & Agents",
+  "plainEnglishSummary": "Voice for lead calling, n8n/Make/Zapier connections, and what agents actually are (and aren't).",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "This week we go a level deeper — voice AI for leads, no-code connectors, and what people actually mean when they say agents.\n\nVoice AI can call, qualify, or follow up on leads at scale, with scripts you approve. Best for appointment setting, reminders, simple qualification — not complex negotiation. Always disclose AI where required, and keep humans on hot leads.\n\nNo-code connectors — Zapier is easiest with a huge app library, great for simple triggers. Make is visual and good for multi-step logic. n8n is more technical with a self-host option, powerful for custom flows. They move data between apps. Pair them with AI for generate-then-send workflows.\n\nAgents — here's the plain version. An agent is AI plus tools plus actions: search, CRM update, send. Not just chat. Agentic means it loops until done, which needs guardrails. Open tools like OpenClaw and Hermes are self-hosted agents when privacy and custom integrations matter. Cloud agents in ChatGPT and Claude are faster to start. Useful for multi-step ops; overkill for a one-off email.\n\nAlright — activity time.",
+    "sections": [
+      {
+        "heading": "Voice AI — game-changer for leads",
+        "paragraphs": [
+          "Voice AI can call, qualify, or follow up on leads at scale — with scripts you approve.",
+          "Best for appointment setting, reminders, simple qualification — not complex negotiation.",
+          "Always disclose AI where required and keep humans for hot leads."
+        ]
+      },
+      {
+        "heading": "No-code connectors",
+        "paragraphs": [
+          "Zapier — easiest, huge app library, great for simple triggers.",
+          "Make — visual, good for multi-step logic.",
+          "n8n — more technical, self-host option, powerful for custom flows.",
+          "They move data between apps — pair with AI for generate-then-send workflows."
+        ]
+      },
+      {
+        "heading": "Agents & agentic AI",
+        "paragraphs": [
+          "Agent = AI + tools + actions like search, CRM update, send. Not just chat.",
+          "Agentic = loops until done — needs guardrails.",
+          "Open tools like OpenClaw and Hermes = self-hosted when privacy matters. Cloud agents = faster to start.",
+          "Useful for multi-step ops; overkill for one-off emails."
+        ]
+      }
+    ]
+  },
+  "type": "quiz",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "Would voice AI fit your lead process — where?",
+    "What's one Zapier/Make flow you'd pair with AI?"
+  ],
+  "steps": [
+    {
+      "question": "Voice AI is strongest for…",
+      "options": [
+        "Lead follow-up and appointment setting with approved scripts",
+        "Negotiating enterprise contracts alone",
+        "Replacing all sales relationships"
+      ],
+      "correctIndex": 0,
+      "feedback": "Scripted, high-volume calls — not relationship closing."
+    },
+    {
+      "question": "Zapier / Make / n8n primarily…",
+      "options": [
+        "Connect apps and automate triggers — move data between tools",
+        "Train new AI models from scratch",
+        "Replace your accountant"
+      ],
+      "correctIndex": 0,
+      "feedback": "No-code glue. Add AI steps for generate-then-send."
+    },
+    {
+      "question": "Best combo example?",
+      "options": [
+        "New form submit → AI drafts email → automation sends after you approve in Slack",
+        "AI replaces CRM entirely with no database",
+        "Print ChatGPT outputs daily"
+      ],
+      "correctIndex": 0,
+      "feedback": "Automation + AI draft + human approval = practical stack."
+    },
+    {
+      "question": "An AI agent differs from chat because…",
+      "options": [
+        "It uses tools and takes actions toward a goal",
+        "It only works on weekends",
+        "It never needs a prompt"
+      ],
+      "correctIndex": 0,
+      "feedback": "Agents act — search, update, send — not just text."
+    },
+    {
+      "question": "'Agentic AI' means…",
+      "options": [
+        "Plans, uses tools, loops until task done or limit hit",
+        "One prompt, one answer, stop",
+        "AI with a human face avatar only"
+      ],
+      "correctIndex": 0,
+      "feedback": "Loops need clear goals and guardrails."
+    },
+    {
+      "question": "When is an agent OVERKILL?",
+      "options": [
+        "One witty subject line for a single email",
+        "Daily multi-dashboard ops summary",
+        "Researching 20 leads with CRM updates"
+      ],
+      "correctIndex": 0,
+      "feedback": "One-off = chat. Repeat multi-step = agent/automation territory."
+    }
+  ],
+  "takeaway": "Voice for scale on scripts. No-code connects apps. Agents for multi-step — not every task."
+}

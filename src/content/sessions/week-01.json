@@ -1,0 +1,104 @@
+{
+  "week": 1,
+  "title": "Demystifying AI: Buzzwords & Players",
+  "plainEnglishSummary": "Cut through the jargon — what AI, ML, and LLMs actually mean, and who the main tools are.",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "Hey — quick prep before Thursday. I want to clear up three terms you'll hear constantly: AI, machine learning, and LLMs. Most salespeople throw these around interchangeably, and that's how you end up buying buzzword soup.\n\nSo first — AI is just the umbrella. It's any software that does something that feels smart. Machine learning is how most modern AI actually learns. Instead of someone writing every rule by hand, the software finds patterns in data. And an LLM — a large language model — that's the engine behind ChatGPT and Claude. The simple version: it predicts the next word, over and over, until it can hold a conversation, write an email, or summarize a document.\n\nWhen a business owner says \"we use AI,\" they almost always mean a chat tool like ChatGPT or Claude — not a robot, not something out of a movie.\n\nLet's talk about the main players. ChatGPT from OpenAI is the one most people know — solid all-rounder, huge ecosystem. Claude from Anthropic is what I reach for when I've got a long document or I need careful, nuanced writing. And Gemini from Google — if your team lives in Google Docs, Gmail, and Drive, Gemini is built to sit right inside that world.\n\nLast thing — my plain-English rule. If a vendor can't explain what their AI actually does in one sentence, be skeptical. Your job this week is simple: learn the words so nobody sells you confusion dressed up as innovation. Alright — when you're ready, jump into the quick activity.",
+    "sections": [
+      {
+        "heading": "AI vs Machine Learning vs LLMs",
+        "paragraphs": [
+          "AI is just the umbrella term — any software that does something that feels smart. Machine learning is how most modern AI learns: the software finds patterns in data instead of someone writing every rule by hand.",
+          "An LLM — a large language model — is the text engine behind ChatGPT and Claude. It predicts the next word, over and over, until it can hold a conversation, write emails, or summarize documents.",
+          "When someone says \"we use AI\" in business, they usually mean a chat tool like ChatGPT or Claude — not a robot."
+        ]
+      },
+      {
+        "heading": "The main players",
+        "paragraphs": [
+          "ChatGPT from OpenAI is the default most people know — strong all-rounder with a huge ecosystem.",
+          "Claude from Anthropic is often better when you've got long documents or you need careful, nuanced writing.",
+          "Gemini from Google fits teams that already live in Google Docs, Gmail, and Drive."
+        ]
+      },
+      {
+        "heading": "Plain-English rule",
+        "paragraphs": [
+          "If a vendor can't explain what their \"AI\" does in one plain sentence, be skeptical.",
+          "Your job this week: learn the words so nobody sells you buzzword soup."
+        ]
+      }
+    ]
+  },
+  "type": "quiz",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "Which buzzword did you hear most before this program — and what does it actually mean now?",
+    "Which player (ChatGPT, Claude, Gemini) fits your daily tools today?"
+  ],
+  "steps": [
+    {
+      "question": "What's the best plain-English description of an LLM?",
+      "options": [
+        "A robot that thinks like a human",
+        "A text engine that predicts the next word over and over",
+        "A database of every book ever written"
+      ],
+      "correctIndex": 1,
+      "feedback": "LLMs predict language — they don't 'know' facts like a library."
+    },
+    {
+      "question": "Machine Learning (ML) is…",
+      "options": [
+        "Software that learns patterns from data instead of fixed rules",
+        "A type of physical robot arm",
+        "The same thing as automation"
+      ],
+      "correctIndex": 0,
+      "feedback": "ML finds patterns in data. That's how chat tools got good at language."
+    },
+    {
+      "question": "When a business owner says 'we use AI,' they most often mean…",
+      "options": [
+        "A chat tool like ChatGPT or Claude",
+        "A self-driving forklift",
+        "A spreadsheet formula"
+      ],
+      "correctIndex": 0,
+      "feedback": "For most owners, AI = LLM chat tools for language tasks."
+    },
+    {
+      "question": "Claude is often chosen over others when you need…",
+      "options": [
+        "Long document analysis and careful writing",
+        "The cheapest option only",
+        "To replace your accountant"
+      ],
+      "correctIndex": 0,
+      "feedback": "Claude shines on long context and thoughtful output."
+    },
+    {
+      "question": "Gemini's biggest advantage for many owners is…",
+      "options": [
+        "Integration with Google Workspace",
+        "Running fully offline with no internet",
+        "Guaranteed legal advice"
+      ],
+      "correctIndex": 0,
+      "feedback": "Gemini fits teams already living in Google Docs, Gmail, and Drive."
+    },
+    {
+      "question": "A vendor says their product uses 'AI' but can't explain how — you should…",
+      "options": [
+        "Buy immediately before prices go up",
+        "Ask what it actually does in one sentence — be skeptical if they can't",
+        "Assume it's the same as ChatGPT"
+      ],
+      "correctIndex": 1,
+      "feedback": "Buzzwords without clarity = red flag. Plain English or walk away."
+    }
+  ],
+  "takeaway": "AI = umbrella. ML = learns from data. LLMs = chat engines. Know the players before you buy."
+}

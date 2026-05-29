@@ -1,0 +1,91 @@
+{
+  "week": 2,
+  "title": "Automation vs AI + Your Glossary",
+  "plainEnglishSummary": "Don't mix up automation and AI — and learn the terms you'll hear every week (GPT, tokens, agents, API…).",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "This week I want to tackle two things that confuse almost every owner: the difference between automation and AI, and a handful of terms you'll hear every single week in this program.\n\nAutomation is when software follows fixed rules. When X happens, do Y. No judgment, no language — just triggers and actions. Think Zapier, Make, or a simple email rule. AI is different. AI handles language and judgment on drafts — writing, summarizing, brainstorming. It predicts; it doesn't follow a fixed script.\n\nThe best setups combine both. AI drafts the email; automation sends it when the trigger fires.\n\nNow your glossary cheat sheet — and yes, you'll use these words. GPT is the family of language models that power ChatGPT. GPT-4, GPT-4o — those are versions with different speed and cost. A prompt is your instruction to the AI. Better prompt, better output. Tokens are pieces of text the model reads and writes. Longer chats cost more and hit limits sooner. An API is how software talks to AI programmatically — your app to the model. And an agent is AI that takes actions — search, send, click — not just replies in chat.\n\nDon't memorize these for a test. Just recognize them when someone says them in a sales call. Alright — hit the activity when you're ready.",
+    "sections": [
+      {
+        "heading": "Automation vs AI — don't mix them up",
+        "paragraphs": [
+          "Automation follows fixed rules: when X happens, do Y. No judgment, no language — just triggers and actions like Zapier, Make, or email rules.",
+          "AI handles language and judgment on drafts — writing, summarizing, brainstorming. It predicts; it doesn't follow a fixed script.",
+          "The best setups combine both: AI drafts the email, automation sends it when the trigger fires."
+        ]
+      },
+      {
+        "heading": "Glossary cheat sheet",
+        "paragraphs": [
+          "GPT — the family of language models behind ChatGPT. GPT-4 and GPT-4o are versions with different speed and cost.",
+          "Prompt — your instruction to the AI. Better prompt, better output.",
+          "Tokens — pieces of text the model reads and writes. Longer chats cost more and hit limits sooner.",
+          "API — how software talks to AI programmatically. Your app connects to the model.",
+          "Agent — AI that takes actions like search, send, or click — not just chat replies."
+        ]
+      }
+    ]
+  },
+  "type": "quiz",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "Where do you already use automation without calling it AI?",
+    "Which glossary term was new to you?"
+  ],
+  "steps": [
+    {
+      "question": "A Zapier workflow sends a welcome email when someone fills a form. That's…",
+      "options": ["Automation", "AI", "Both automation and AI"],
+      "correctIndex": 0,
+      "feedback": "Fixed trigger → fixed action = automation. No language model required."
+    },
+    {
+      "question": "You ask ChatGPT to rewrite a rough email in a friendly tone. That's…",
+      "options": ["Automation only", "AI (LLM)", "Neither"],
+      "correctIndex": 1,
+      "feedback": "Language + judgment on a draft = AI."
+    },
+    {
+      "question": "What is a 'token' in AI terms?",
+      "options": [
+        "A piece of text the model processes — roughly word chunks",
+        "A payment coin for crypto",
+        "A login password"
+      ],
+      "correctIndex": 0,
+      "feedback": "Tokens = how models measure input/output length and cost."
+    },
+    {
+      "question": "An 'API' lets your business software…",
+      "options": [
+        "Connect to AI (or other services) programmatically",
+        "Replace your website hosting",
+        "Automatically fire employees"
+      ],
+      "correctIndex": 0,
+      "feedback": "API = software-to-software connection. How apps embed AI."
+    },
+    {
+      "question": "Which setup uses BOTH automation and AI well?",
+      "options": [
+        "AI drafts a personalized follow-up → automation sends it when a lead goes cold",
+        "Print every ChatGPT reply and mail it",
+        "Use AI to set fixed Zapier triggers with no review"
+      ],
+      "correctIndex": 0,
+      "feedback": "AI for the draft, automation for the timing and delivery."
+    },
+    {
+      "question": "An 'agent' differs from chat because it…",
+      "options": [
+        "Can take actions using tools — not just generate text",
+        "Always costs less",
+        "Never needs human review"
+      ],
+      "correctIndex": 0,
+      "feedback": "Agents act in the world. Chat only answers."
+    }
+  ],
+  "takeaway": "Automation = fixed rules. AI = language and drafts. Learn the glossary so you're never confused in a sales call."
+}

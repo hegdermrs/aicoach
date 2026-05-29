@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Execution Accelerator Coaching Portal
 
-## Getting Started
+Pre-session prep portal for the AI Execution Accelerator Mastermind. Members complete ~5 minute interactive activities before each Thursday 11AM CST session.
 
-First, run the development server:
+## Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Install dependencies**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Configure Supabase**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   - Create a project at [supabase.com](https://supabase.com)
+   - Run migrations in order in the Supabase SQL editor:
+     - [`supabase/migrations/001_initial.sql`](supabase/migrations/001_initial.sql)
+     - [`supabase/migrations/002_fix_rls_recursion.sql`](supabase/migrations/002_fix_rls_recursion.sql) (only if you already ran 001 before the RLS fix)
+     - [`supabase/migrations/003_invite_codes.sql`](supabase/migrations/003_invite_codes.sql)
+   - **Authentication → Providers → Email**: enable Email provider, turn **off** “Confirm email” so members can sign in immediately after signup
+   - Copy `.env.local.example` to `.env.local` and fill in your keys (including `SUPABASE_SERVICE_ROLE_KEY`)
 
-## Learn More
+3. **Create your coach admin account**
 
-To learn more about Next.js, take a look at the following resources:
+   - Go to `/signup` and use an invite code (generate one manually in SQL first, or sign up then set admin):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```sql
+   insert into public.invite_codes (code, tier, cohort_start)
+   values ('COACH000', '3500', current_date);
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   update public.profiles set is_admin = true where email = 'you@example.com';
+   ```
 
-## Deploy on Vercel
+   - Or generate codes from `/admin` after you’re an admin
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Run locally**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000)
+
+## Member signup codes
+
+Share these fixed codes — everyone at that tier uses the same one:
+
+| Tier | Invite code |
+|------|-------------|
+| $1000 | **AIEA11X** |
+| $3500 | **AIEA26Y** |
+
+Members go to `/signup`, enter the code for their tier, plus name, email, and password.
+
+Run [`supabase/migrations/004_tier_invite_codes.sql`](supabase/migrations/004_tier_invite_codes.sql) in Supabase SQL Editor to create these codes. Update `cohort_start` in that file (or via SQL) to your mastermind start date.
+
+## Member flow
+
+1. Send them the code for their tier (`AIEA11X` or `AIEA26Y`)
+2. Member goes to `/signup`, enters code + name + email + password
+3. Member signs in at `/login` anytime after
+
+## Editing session content
+
+Prep activities live in [`src/content/sessions/`](src/content/sessions/) as JSON files (`week-01.json` … `week-12.json`). Edit copy there — no code changes needed for text updates.
+
+## Deploy
+
+Deploy to [Vercel](https://vercel.com) and set the same environment variables (including `SUPABASE_SERVICE_ROLE_KEY` as a server-only secret).

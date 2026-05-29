@@ -1,0 +1,63 @@
+{
+  "week": 12,
+  "title": "Your AI Stack & Mastermind Prep",
+  "plainEnglishSummary": "Consolidate what you learned — chat, workflows, automation, agents — and what to bring to session with Kai.",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "Final prep week — let's consolidate everything into a stack you can actually run, and what to bring to our mastermind session.\n\nYour stack in order. Layer one — a chat sidekick, ChatGPT or Claude, for daily drafts. Layer two — prompt templates plus documented weekly workflows. Layer three — no-code automation like Zapier or Make for repeat triggers. Layer four — agents, voice, custom tools only where pilots proved ROI. Don't skip to layer four because it sounds cool.\n\nWhat to bring to mastermind. Your top two workflows: time spent today, target time with AI, where you're stuck. One win and one failure — both teach more than theory. Your ninety-day priority: one project only, not ten. And questions from this FAQ week that need live debate.\n\nYou've built the foundation. Now we make it real in your business. Activity time.",
+    "sections": [
+      {
+        "heading": "Your stack in order",
+        "paragraphs": [
+          "Layer 1 — Chat sidekick (ChatGPT or Claude) for daily drafts.",
+          "Layer 2 — Prompt templates + documented weekly workflows.",
+          "Layer 3 — No-code automation (Zapier/Make) for repeat triggers.",
+          "Layer 4 — Agents / voice / custom tools only where pilots proved ROI."
+        ]
+      },
+      {
+        "heading": "What to bring to mastermind",
+        "paragraphs": [
+          "Top 2 workflows: time spent today, target time with AI, where you're stuck.",
+          "One win and one failure — both teach more than theory.",
+          "Your 90-day priority: one project only. Not ten.",
+          "Questions from this FAQ week that need live debate."
+        ]
+      }
+    ]
+  },
+  "type": "reflect",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "Share your 90-day #1 AI priority",
+    "What's one thing you'll stop doing manually?"
+  ],
+  "steps": [
+    {
+      "question": "Which layer are you on today? (Chat only, workflows, automation, or agents)",
+      "placeholder": "e.g. Daily ChatGPT for email — no automation yet"
+    },
+    {
+      "question": "Workflow #1 for mastermind: what is it, how long does it take, where are you stuck?",
+      "placeholder": "e.g. Lead follow-up — 2 hrs/week — stuck on personalization"
+    },
+    {
+      "question": "One AI win from the last 12 weeks (even small):",
+      "placeholder": "e.g. Meeting notes to team email saves 35 min/week"
+    },
+    {
+      "question": "One AI mistake or lesson learned:",
+      "placeholder": "e.g. Published a stat without verifying — now I always check"
+    },
+    {
+      "question": "Your single 90-day AI priority (one sentence):",
+      "placeholder": "e.g. Automate post-demo follow-up with AI draft + human send"
+    },
+    {
+      "question": "One question you want answered live in mastermind:",
+      "placeholder": "e.g. Is voice AI ready for my inbound leads?"
+    }
+  ],
+  "takeaway": "Chat → workflows → automation → agents. One 90-day priority. Bring real workflows to Kai."
+}

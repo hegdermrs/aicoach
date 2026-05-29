@@ -1,0 +1,110 @@
+{
+  "week": 9,
+  "title": "Cost, Pricing, Privacy & Security",
+  "plainEnglishSummary": "What AI actually costs, free vs paid, API pricing traps, and what never to paste into AI.",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "Let's talk money and safety — what AI actually costs, the pricing traps vendors hide, and what you should never paste into a chat window.\n\nFree tiers are fine for learning and light personal use. Paid matters when you use AI daily, need faster models, longer context, or team features. Pay for reliability and capacity — not because paid sounds more serious.\n\nChat subscription — think twenty bucks a month — is predictable and simple. Best for most owners using chat directly. API pricing is pay per token. Cheap at small volume, can spike at high volume or in production apps. If someone builds you an AI app, ask: chat seats or API? What's monthly at double your expected usage?\n\nPrivacy basics. Never paste passwords, full social security numbers, unreleased financials, privileged legal docs, or raw customer personal info you don't need. Check team settings: training opt-out, retention, who has access. Small team checklist: approved tools list, redaction habit, human review on anything external.\n\nThat's the grown-up stuff. Activity time.",
+    "sections": [
+      {
+        "heading": "Free vs paid",
+        "paragraphs": [
+          "Free tiers are fine for learning and light personal use. Paid matters when you use AI daily, need faster models, longer context, or team features.",
+          "Pay for reliability and capacity — not because \"paid sounds more serious.\""
+        ]
+      },
+      {
+        "heading": "Model pricing vs API pricing",
+        "paragraphs": [
+          "Chat subscription (~$20/mo) is predictable and simple — best for most owners using chat directly.",
+          "API pricing is pay per token — cheap at small volume, can spike at high volume or in production apps.",
+          "If someone builds you an \"AI app,\" ask: chat seats or API? What's monthly at 2x usage?"
+        ]
+      },
+      {
+        "heading": "Privacy & security basics",
+        "paragraphs": [
+          "Never paste passwords, full SSNs, unreleased financials, privileged legal docs, or raw customer PII you don't need.",
+          "Check team settings: training opt-out, retention, who has access.",
+          "Small team checklist: approved tools list, redaction habit, human review on external sends."
+        ]
+      }
+    ]
+  },
+  "type": "scenario",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "Where might API costs surprise you in your business?",
+    "What data is off-limits for your team to paste into AI?"
+  ],
+  "steps": [
+    {
+      "situation": "You use ChatGPT 30 min/day for drafts and summaries.",
+      "question": "Best cost model to start?",
+      "options": [
+        "Paid chat subscription — predictable",
+        "Build custom API app immediately",
+        "Only free tier forever regardless of limits"
+      ],
+      "correctIndex": 0,
+      "feedback": "Daily chat use → subscription is simple ROI math."
+    },
+    {
+      "situation": "A dev quotes an AI feature using API at 50k customer queries/month.",
+      "question": "You should ask…",
+      "options": [
+        "Cost at 2x volume and what happens if usage spikes",
+        "Nothing — API is always $20",
+        "To skip security review"
+      ],
+      "correctIndex": 0,
+      "feedback": "API scales with tokens — model the upside case."
+    },
+    {
+      "situation": "Employee pastes a client's full credit card number into ChatGPT to 'draft a refund email.'",
+      "question": "Correct response?",
+      "options": [
+        "Stop — redact PII; use last 4 digits only in prompt",
+        "Great — faster email",
+        "Switch to a free model"
+      ],
+      "correctIndex": 0,
+      "feedback": "Never paste full payment or identity data."
+    },
+    {
+      "situation": "You're estimating AI project cost for a simple internal summarizer.",
+      "question": "Include…",
+      "options": [
+        "Tool fees, build time, review time, and usage growth",
+        "Only the first month subscription",
+        "Nothing — AI is free"
+      ],
+      "correctIndex": 0,
+      "feedback": "Human review and adoption time are real costs too."
+    },
+    {
+      "situation": "Team uses 6 different AI tools with no rules.",
+      "question": "Risk?",
+      "options": [
+        "Data scattered, inconsistent quality, security gaps",
+        "Guaranteed better output",
+        "Lower cost always"
+      ],
+      "correctIndex": 0,
+      "feedback": "Tool sprawl = privacy and quality risk. Standardize later (Week 10)."
+    },
+    {
+      "situation": "You're choosing free vs paid for your exec assistant's daily AI use.",
+      "question": "Paid is worth it when…",
+      "options": [
+        "They hit limits, need speed, or use it hours per day for core work",
+        "Never — free is identical",
+        "Only if the tool has a cartoon logo"
+      ],
+      "correctIndex": 0,
+      "feedback": "Capacity and reliability drive paid ROI."
+    }
+  ],
+  "takeaway": "Chat sub for daily use. Watch API at scale. Never paste secrets. Estimate total cost."
+}

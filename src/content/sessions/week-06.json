@@ -1,0 +1,100 @@
+{
+  "week": 6,
+  "title": "Where AI Fits in Your Business",
+  "plainEnglishSummary": "Lead gen, content, admin, and customer service — spot the opportunities in your own operation.",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "This week we're mapping AI onto your actual business — not theory, but where it fits in what you already do every week.\n\nHigh-fit use cases I see over and over. Lead gen and follow-up — research, personalized openers, follow-up sequences, with a human hitting send. Content and marketing — posts, emails, landing copy from your briefs and voice notes. Admin and inbox — summarize threads, draft replies, turn meeting notes into action items. Customer service — FAQ drafts, tone rewrites, internal reply suggestions. Not unsupervised refunds or policy calls.\n\nHow do you spot opportunities in your own operation? List tasks you do weekly that involve words — reading, writing, sorting, summarizing. Ask yourself two questions: would a solid first draft save me twenty-plus minutes? And would a wrong draft hurt someone?\n\nBring your top two opportunities to the mastermind. That's high-value time. Alright — activity when you're ready.",
+    "sections": [
+      {
+        "heading": "High-fit use cases",
+        "paragraphs": [
+          "Lead gen and follow-up — research, personalized openers, follow-up sequences. Human sends.",
+          "Content and marketing — posts, emails, landing copy from your briefs and voice notes.",
+          "Admin and inbox — summarize threads, draft replies, meeting notes into action items.",
+          "Customer service — FAQ drafts, tone rewrites, internal reply suggestions. Not unsupervised refunds or policy calls."
+        ]
+      },
+      {
+        "heading": "Spot opportunities in your business",
+        "paragraphs": [
+          "List tasks you do weekly that involve words: reading, writing, sorting, summarizing.",
+          "Ask: would a solid first draft save me twenty-plus minutes? Would a wrong draft hurt someone?",
+          "Bring your top two opportunities to the mastermind — that's high-value session time."
+        ]
+      }
+    ]
+  },
+  "type": "scenario",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "What's your #1 AI opportunity this month?",
+    "What should you NOT delegate to AI in customer service?"
+  ],
+  "steps": [
+    {
+      "situation": "New leads get a generic template 2 days late.",
+      "question": "Best AI assist?",
+      "options": [
+        "Draft personalized openers from CRM notes — you review and send same day",
+        "Fully autonomous send with no human",
+        "Ignore leads under $1k"
+      ],
+      "correctIndex": 0,
+      "feedback": "Speed + personalization draft = lead gen win. Human approves."
+    },
+    {
+      "situation": "You record voice notes after sales calls and need LinkedIn posts.",
+      "question": "Best fit?",
+      "options": ["Content & marketing", "Customer refunds", "Payroll"],
+      "correctIndex": 0,
+      "feedback": "Voice → transcript → posts = content pipeline."
+    },
+    {
+      "situation": "Inbox has 40 threads Monday morning.",
+      "question": "Smart first step?",
+      "options": [
+        "AI summarizes each thread + drafts replies for you to approve",
+        "AI sends all replies automatically",
+        "Delete everything"
+      ],
+      "correctIndex": 0,
+      "feedback": "Admin/inbox = summarize + draft. You stay in control."
+    },
+    {
+      "situation": "Customer asks if you can honor a policy exception on a refund.",
+      "question": "AI's role?",
+      "options": [
+        "Draft options for you — you decide and respond",
+        "Auto-approve refund",
+        "Ignore the customer"
+      ],
+      "correctIndex": 0,
+      "feedback": "CS policy = human decision. AI can prep language only."
+    },
+    {
+      "situation": "You're spotting AI opportunities in your business.",
+      "question": "Best filter?",
+      "options": [
+        "Weekly word-heavy tasks where a draft saves 20+ min and errors are fixable",
+        "Only tasks you've never done before",
+        "Only tasks that require 100% accuracy with no review"
+      ],
+      "correctIndex": 0,
+      "feedback": "Repeatable language work + review = sweet spot."
+    },
+    {
+      "situation": "You're preparing for mastermind with Kai.",
+      "question": "What to bring?",
+      "options": [
+        "Top 2 workflows, time spent, and where you're stuck",
+        "A request to 'do AI for everything'",
+        "Nothing — wing it"
+      ],
+      "correctIndex": 0,
+      "feedback": "Specific workflows = specific help. That's ROI on the session."
+    }
+  ],
+  "takeaway": "Lead gen, content, admin, CS drafts — not high-stakes autopilot. Bring workflows to mastermind."
+}

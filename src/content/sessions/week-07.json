@@ -1,0 +1,111 @@
+{
+  "week": 7,
+  "title": "Tools & Prompting You'll Actually Use",
+  "plainEnglishSummary": "Pick your sidekick (ChatGPT vs Claude), prompt for real answers, and use AI for email and content.",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "Tools week — but I'm not going to overwhelm you. Pick one sidekick, learn to prompt it well, and use it for the three things owners actually do: email, content, and customer replies.\n\nChatGPT is the best default for most owners — fast drafts, wide plugins, Custom GPTs. Claude shines on long documents, careful tone, and big context for analysis. You don't need both on day one. Master one, then add the other if you hit limits.\n\nPrompting one-oh-one for business. Give examples of your voice — paste two emails you love and say match this tone. Specify anti-goals: no hype, no emojis, under one-fifty words. Iterate in the same thread: shorter, more direct, add a question at the end.\n\nThree workflows. Email: situation plus audience plus goal plus tone, get a draft, personalize one line. Content: bullet your ideas, AI expands, you cut thirty percent. Customer replies: paste the thread with sensitive data redacted, get an empathetic draft, you approve before send.\n\nThat's your toolkit for this week. Jump into the activity.",
+    "sections": [
+      {
+        "heading": "Pick your sidekick",
+        "paragraphs": [
+          "ChatGPT — best default for most owners. Fast drafts, wide plugins, Custom GPTs.",
+          "Claude — long docs, careful tone, big context for analysis.",
+          "You don't need both on day one. Master one, then add if you hit limits."
+        ]
+      },
+      {
+        "heading": "Prompting 101 for business",
+        "paragraphs": [
+          "Give examples of your voice: paste two emails you love and say \"match this tone.\"",
+          "Specify anti-goals: \"No hype. No emojis. Under 150 words.\"",
+          "Iterate in-thread: \"Shorter.\" \"More direct.\" \"Add a question at the end.\""
+        ]
+      },
+      {
+        "heading": "Email, content, customer replies",
+        "paragraphs": [
+          "Email: situation + audience + goal + tone → draft → you personalize one line.",
+          "Content: bullet your ideas → AI expands → you cut thirty percent.",
+          "Customer replies: paste thread with sensitive data redacted → draft empathetic reply → you approve."
+        ]
+      }
+    ]
+  },
+  "type": "promptFix",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "ChatGPT or Claude — which is your sidekick and why?",
+    "Paste one email you'd use as a 'voice example' for AI."
+  ],
+  "steps": [
+    {
+      "weakPrompt": "Write a professional email.",
+      "question": "What's missing?",
+      "options": [
+        "Situation, recipient relationship, goal, tone, length",
+        "The word 'please'",
+        "A longer subject line"
+      ],
+      "correctIndex": 0,
+      "feedback": "Professional to whom? About what? How long?"
+    },
+    {
+      "weakPrompt": "Here are 2 emails I sent that performed well: [paste]. Draft a follow-up to a prospect who ghosted after a demo. Match my tone. 100 words max. Soft CTA to book.",
+      "question": "Why is this strong?",
+      "options": [
+        "Voice examples + situation + constraints",
+        "It uses the word 'ghosted'",
+        "It guarantees they will reply"
+      ],
+      "correctIndex": 0,
+      "feedback": "Examples teach tone better than adjectives."
+    },
+    {
+      "weakPrompt": "Make social posts.",
+      "question": "Best upgrade?",
+      "options": [
+        "Platform, audience, 3 bullet ideas, tone, number of posts",
+        "Add 20 hashtags",
+        "Use a different font"
+      ],
+      "correctIndex": 0,
+      "feedback": "Content needs channel and raw material."
+    },
+    {
+      "weakPrompt": "Customer is upset about a late delivery. Draft a reply that acknowledges, explains briefly, offers next step. No blame. Under 120 words. I'll send from support@.",
+      "question": "Good customer-reply prompt because…",
+      "options": [
+        "Clear situation, tone rules, length, and you still approve",
+        "AI sends automatically",
+        "It shares full credit card data"
+      ],
+      "correctIndex": 0,
+      "feedback": "Draft + guardrails + human send = safe CS assist."
+    },
+    {
+      "weakPrompt": "No hype. No emojis. Sound like a calm expert.",
+      "question": "These lines are…",
+      "options": [
+        "Anti-goals / tone constraints — very useful",
+        "Useless — AI ignores them",
+        "Only for Claude not ChatGPT"
+      ],
+      "correctIndex": 0,
+      "feedback": "Tell AI what to avoid — cuts editing time."
+    },
+    {
+      "weakPrompt": "Shorter. More direct. Keep the CTA.",
+      "question": "This is an example of…",
+      "options": [
+        "In-thread iteration — refine without starting over",
+        "A broken prompt",
+        "Something only developers do"
+      ],
+      "correctIndex": 0,
+      "feedback": "Second and third prompts in the same chat save time."
+    }
+  ],
+  "takeaway": "One sidekick, strong prompts, voice examples. AI drafts email and content — you approve."
+}

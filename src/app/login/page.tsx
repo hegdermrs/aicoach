@@ -1,0 +1,96 @@
+"use client";
+
+import Link from "next/link";
+import { useState, useTransition } from "react";
+import { signInWithPassword } from "@/lib/actions";
+
+export default function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState<string | null>(null);
+  const [isPending, startTransition] = useTransition();
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setError(null);
+
+    startTransition(async () => {
+      const result = await signInWithPassword(email, password);
+      if (result?.error) {
+        setError(result.error);
+      }
+    });
+  }
+
+  return (
+    <div className="flex min-h-screen items-center justify-center px-4">
+      <div className="w-full max-w-md space-y-8">
+        <div className="text-center">
+          <h1 className="text-2xl font-semibold text-zinc-50">
+            AI Execution Accelerator
+          </h1>
+          <p className="mt-2 text-sm text-zinc-400">
+            Sign in to access pre-session prep.
+          </p>
+        </div>
+
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-4 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6"
+        >
+          <div>
+            <label htmlFor="email" className="block text-sm text-zinc-400">
+              Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              required
+              autoComplete="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@company.com"
+              className="mt-2 w-full rounded-xl border border-zinc-800 bg-zinc-950 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-emerald-500 focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="password" className="block text-sm text-zinc-400">
+              Password
+            </label>
+            <input
+              id="password"
+              type="password"
+              required
+              autoComplete="current-password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="mt-2 w-full rounded-xl border border-zinc-800 bg-zinc-950 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-emerald-500 focus:outline-none"
+            />
+          </div>
+
+          {error && (
+            <p className="rounded-xl border border-red-500/20 bg-red-500/10 px-4 py-3 text-sm text-red-300">
+              {error}
+            </p>
+          )}
+
+          <button
+            type="submit"
+            disabled={isPending}
+            className="w-full rounded-xl bg-emerald-600 py-3 text-sm font-medium text-white hover:bg-emerald-500 disabled:opacity-50"
+          >
+            {isPending ? "Signing in…" : "Sign in"}
+          </button>
+        </form>
+
+        <p className="text-center text-sm text-zinc-500">
+          Have an invite code?{" "}
+          <Link href="/signup" className="text-emerald-400 hover:text-emerald-300">
+            Create your account
+          </Link>
+        </p>
+      </div>
+    </div>
+  );
+}

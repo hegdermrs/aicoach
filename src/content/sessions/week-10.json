@@ -1,0 +1,103 @@
+{
+  "week": 10,
+  "title": "Team Adoption Rollout",
+  "plainEnglishSummary": "Introduce AI without fear — pilots, company rules, better prompting, and stopping tool chaos.",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "If you're going to roll AI out to your team, this week is about doing it without creating fear or chaos.\n\nStart with the conversation. Frame AI as an assistant, not a replacement. We're removing boring first drafts, not your judgment. Acknowledge the fear honestly — then show one workflow where AI saves thirty minutes on something they already hate doing.\n\nRollout plan. Pick one to three pilot use cases with volunteers — not a company-wide mandate on day one. Write simple AI rules: approved tools, no pasting client secrets, humans send external messages. Train prompting with two or three copy-paste templates. Document workflows in one shared doc. Prevent random tool overload — one primary chat tool, add others only with approval.\n\nThat's how adoption actually sticks. Alright — activity when you're ready.",
+    "sections": [
+      {
+        "heading": "The conversation to have",
+        "paragraphs": [
+          "Frame AI as an assistant, not a replacement: \"We're removing boring first drafts, not your judgment.\"",
+          "Acknowledge fear honestly — then show one workflow where AI saves thirty minutes they hate."
+        ]
+      },
+      {
+        "heading": "Rollout plan",
+        "paragraphs": [
+          "Pick one to three pilot use cases with volunteers — not company-wide mandate on day one.",
+          "Write simple AI rules: approved tools, no pasting client secrets, human sends external messages.",
+          "Train prompting with two or three copy-paste templates. Document workflows in one shared doc.",
+          "Prevent random tool overload — one primary chat tool, add others only with approval."
+        ]
+      }
+    ]
+  },
+  "type": "scenario",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "What's your first pilot use case for the team?",
+    "What 2 rules would go on your company AI one-pager?"
+  ],
+  "steps": [
+    {
+      "situation": "Team hears 'we're adopting AI' and fears layoffs.",
+      "question": "Best leadership message?",
+      "options": [
+        "AI handles first drafts of tasks you hate — your calls stay yours",
+        "AI will replace half the team by Friday",
+        "Say nothing until rollout"
+      ],
+      "correctIndex": 0,
+      "feedback": "Assistant framing + concrete time-save example reduces fear."
+    },
+    {
+      "situation": "Choosing pilot use cases.",
+      "question": "Best approach?",
+      "options": [
+        "1–3 voluntary pilots with clear before/after time tracking",
+        "Mandate 12 tools for everyone tomorrow",
+        "Let everyone experiment with no rules"
+      ],
+      "correctIndex": 0,
+      "feedback": "Small pilots with metrics beat big-bang chaos."
+    },
+    {
+      "situation": "Sales rep wants to paste full client contracts into a random free AI site.",
+      "question": "Company rule?",
+      "options": [
+        "Approved tools only; redact sensitive data; no unvetted apps",
+        "Anything goes if it's free",
+        "Ban AI entirely"
+      ],
+      "correctIndex": 0,
+      "feedback": "Approved stack + redaction = minimum viable policy."
+    },
+    {
+      "situation": "Support team keeps writing weak prompts and getting generic replies.",
+      "question": "Best fix?",
+      "options": [
+        "Shared prompt templates + 30-min training with examples",
+        "Buy a more expensive model only",
+        "Fire the team"
+      ],
+      "correctIndex": 0,
+      "feedback": "Templates beat tool hopping."
+    },
+    {
+      "situation": "Three departments each bought different AI subscriptions.",
+      "question": "Prevent overload by…",
+      "options": [
+        "Standardize on 1 primary chat tool; approve exceptions",
+        "Add a fourth tool for balance",
+        "Ignore it"
+      ],
+      "correctIndex": 0,
+      "feedback": "One primary tool simplifies training, security, and cost."
+    },
+    {
+      "situation": "Pilot succeeded — weekly meeting notes → action email saves 40 min.",
+      "question": "Next step?",
+      "options": [
+        "Document the workflow and train one more team",
+        "Immediately agentify with no review",
+        "Keep it secret"
+      ],
+      "correctIndex": 0,
+      "feedback": "Document + expand beats jumping to full automation."
+    }
+  ],
+  "takeaway": "Assistant not replacement. Pilots, rules, templates, one primary tool — then scale."
+}

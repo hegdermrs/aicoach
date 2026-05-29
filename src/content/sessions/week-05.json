@@ -1,0 +1,92 @@
+{
+  "week": 5,
+  "title": "AI Strategy: 4 Ways ROI & Your First Project",
+  "plainEnglishSummary": "Where AI pays off for busy owners — and how to pick one first project that actually sticks.",
+  "durationMinutes": 8,
+  "reading": {
+    "readingMinutes": 3,
+    "script": "Let's talk strategy — where AI actually pays off for a busy owner, and how to pick a first project that sticks instead of becoming shelfware.\n\nThere are four ways AI creates ROI. One — saves time: drafts, summaries, first passes on email, content, notes. Two — saves money: less contractor time on repetitive copy, research, or admin prep. Three — makes money: faster follow-up, more content, better lead response through speed and volume. Four — better decisions: clearer options, pros and cons, scenario planning from your data. You still decide — AI just helps you think faster.\n\nHow do you choose your first project? Pick something you do weekly, that takes thirty-plus minutes, and that doesn't require perfect accuracy on day one. Avoid starting with \"AI everything\" or a customer-facing bot with no guardrails. Win once, document it, then expand.\n\nThat's the whole game at this stage. One win beats ten experiments. Alright — activity time.",
+    "sections": [
+      {
+        "heading": "4 ways AI creates ROI",
+        "paragraphs": [
+          "Saves time — drafts, summaries, first passes on work you'd do manually: email, content, notes.",
+          "Saves money — less contractor time on repetitive copy, research, or admin prep.",
+          "Makes money — faster follow-up, more content, better lead response through speed and volume.",
+          "Better decisions — clearer options, pros and cons, scenario planning from your data. You still decide."
+        ]
+      },
+      {
+        "heading": "How to choose your first AI project",
+        "paragraphs": [
+          "Pick something you do weekly, that takes thirty-plus minutes, and that doesn't require perfect accuracy on day one.",
+          "Avoid starting with \"AI everything\" or a customer-facing bot with no guardrails.",
+          "Win once, document it, then expand."
+        ]
+      }
+    ]
+  },
+  "type": "scenario",
+  "meetingUrl": "",
+  "discussPrompts": [
+    "Which of the 4 ROI types matters most to you right now?",
+    "What's your first AI project for the next 30 days?"
+  ],
+  "steps": [
+    {
+      "situation": "You spend 45 min every Monday turning messy notes into a team update email.",
+      "question": "Primary ROI type?",
+      "options": ["Saves Time", "Makes Money", "Better Decisions only"],
+      "correctIndex": 0,
+      "feedback": "Weekly time sink → classic time-save project. AI drafts, you edit 5 min."
+    },
+    {
+      "situation": "You want AI to approve refunds over $500 automatically.",
+      "question": "Good first project?",
+      "options": [
+        "No — high stakes, needs human judgment first",
+        "Yes — automate immediately",
+        "Yes — if you use the most expensive model"
+      ],
+      "correctIndex": 0,
+      "feedback": "Money + customer trust = not your first pilot."
+    },
+    {
+      "situation": "Cold leads sit 3 days before anyone follows up. You want faster personalized outreach.",
+      "question": "Primary ROI type?",
+      "options": ["Makes Money", "Saves Time only", "Neither"],
+      "correctIndex": 0,
+      "feedback": "Speed to lead = revenue. AI drafts; human sends."
+    },
+    {
+      "situation": "You're choosing your FIRST AI project as a busy owner.",
+      "question": "Best pick?",
+      "options": [
+        "Weekly task, 30+ min, low accuracy risk, you can review output",
+        "Full autonomous customer service with no review",
+        "Replace your CRM in one weekend"
+      ],
+      "correctIndex": 0,
+      "feedback": "Small weekly win beats big risky automation."
+    },
+    {
+      "situation": "You pasted last quarter's numbers and want AI to suggest 3 strategic options with tradeoffs.",
+      "question": "Primary ROI type?",
+      "options": ["Better Decisions", "Saves Time only", "Makes Money only"],
+      "correctIndex": 0,
+      "feedback": "Scenario framing from your data — you decide. AI assists thinking."
+    },
+    {
+      "situation": "You hired a copywriter for $2k/mo mostly for social post first drafts.",
+      "question": "AI might…",
+      "options": [
+        "Save Money on first drafts — keep human for brand polish",
+        "Replace all marketing forever with no review",
+        "Have no effect on cost"
+      ],
+      "correctIndex": 0,
+      "feedback": "AI drafts → less contractor hours on repetitive work."
+    }
+  ],
+  "takeaway": "ROI = time, money, revenue, or decisions. First project = weekly, reviewable, low risk."
+}
