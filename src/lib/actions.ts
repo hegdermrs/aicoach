@@ -34,7 +34,7 @@ export async function completePrep(
     return { error: error.message };
   }
 
-  revalidatePath("/");
+  revalidatePath("/dashboard");
   revalidatePath(`/prep/${weekNumber}`);
 
   return { success: true };
@@ -113,7 +113,7 @@ export async function signUpWithInvite(input: {
   }
 
   revalidatePath("/admin");
-  redirect("/");
+  redirect("/dashboard");
 }
 
 export async function signInWithPassword(email: string, password: string) {
@@ -128,13 +128,13 @@ export async function signInWithPassword(email: string, password: string) {
     return { error: error.message };
   }
 
-  redirect("/");
+  redirect("/dashboard");
 }
 
 export async function signOut() {
   const supabase = await createClient();
   await supabase.auth.signOut();
-  redirect("/login");
+  redirect("/");
 }
 
 function generateCode(): string {

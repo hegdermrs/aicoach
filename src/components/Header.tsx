@@ -17,7 +17,7 @@ function navLinkClass(active: boolean) {
 
 export function Header({ name, showAdmin }: HeaderProps) {
   const pathname = usePathname();
-  const isDashboard = pathname === "/";
+  const isDashboard = pathname === "/dashboard";
   const isAdminPage = pathname.startsWith("/admin");
   const isPrep = pathname.startsWith("/prep");
 
@@ -25,7 +25,7 @@ export function Header({ name, showAdmin }: HeaderProps) {
     <header className="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <div className="min-w-0">
-          <Link href="/" className="text-lg font-semibold text-zinc-50">
+          <Link href="/dashboard" className="text-lg font-semibold text-zinc-50">
             AI Execution Accelerator
           </Link>
           {name && (
@@ -33,7 +33,7 @@ export function Header({ name, showAdmin }: HeaderProps) {
           )}
         </div>
         <nav className="flex shrink-0 items-center gap-1 sm:gap-4 text-sm">
-          <Link href="/" className={`px-2 py-1 ${navLinkClass(isDashboard)}`}>
+          <Link href="/dashboard" className={`px-2 py-1 ${navLinkClass(isDashboard)}`}>
             Dashboard
           </Link>
           {showAdmin && (

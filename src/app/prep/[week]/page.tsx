@@ -16,18 +16,18 @@ export default async function PrepPage({ params }: PrepPageProps) {
   const week = Number(weekParam);
 
   if (!Number.isInteger(week) || week < 1 || week > 12) {
-    redirect("/");
+    redirect("/dashboard");
   }
 
   const { profile, isAdmin } = await getAuthContext();
 
   if (!isWeekUnlocked(week, { isAdmin })) {
-    redirect("/");
+    redirect("/dashboard");
   }
 
   const session = getSession(week);
   if (!session) {
-    redirect("/");
+    redirect("/dashboard");
   }
 
   const completions = await getPrepCompletions();
@@ -40,10 +40,10 @@ export default async function PrepPage({ params }: PrepPageProps) {
 
       <main className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
         <PageNav
-          backHref="/"
+          backHref="/dashboard"
           backLabel="Back to dashboard"
           items={[
-            { label: "Dashboard", href: "/" },
+            { label: "Dashboard", href: "/dashboard" },
             { label: `Week ${week} prep` },
           ]}
         />

@@ -23,7 +23,13 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center px-4">
+    <div className="flex min-h-screen flex-col px-4">
+      <div className="mx-auto w-full max-w-md pt-6">
+        <Link href="/" className="text-sm text-zinc-500 hover:text-zinc-300">
+          ← Back to home
+        </Link>
+      </div>
+      <div className="flex flex-1 items-center justify-center pb-12">
       <div className="w-full max-w-md space-y-8">
         <div className="text-center">
           <h1 className="text-2xl font-semibold text-zinc-50">
@@ -90,6 +96,7 @@ export default function LoginPage() {
             Create your account
           </Link>
         </p>
+      </div>
       </div>
     </div>
   );

@@ -61,7 +61,7 @@ where email = '${user.email}';`}
               </pre>
             </div>
 
-            <Link href="/" className="inline-block text-sm text-emerald-400 hover:text-emerald-300">
+            <Link href="/dashboard" className="inline-block text-sm text-emerald-400 hover:text-emerald-300">
               ← Back to dashboard
             </Link>
           </div>
@@ -80,9 +80,9 @@ where email = '${user.email}';`}
 
       <main className="mx-auto max-w-6xl space-y-10 px-4 py-8 sm:px-6">
         <PageNav
-          backHref="/"
+          backHref="/dashboard"
           backLabel="Back to dashboard"
-          items={[{ label: "Dashboard", href: "/" }, { label: "Admin" }]}
+          items={[{ label: "Dashboard", href: "/dashboard" }, { label: "Admin" }]}
         />
 
         <InviteCodesPanel codes={inviteCodes} />

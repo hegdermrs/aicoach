@@ -41,7 +41,7 @@ export function CompleteScreen({ session, isAdmin, onRetake }: CompleteScreenPro
       )}
 
       <Link
-        href="/"
+        href="/dashboard"
         className="block w-full rounded-xl bg-emerald-600 py-3 text-center text-sm font-medium text-white hover:bg-emerald-500"
       >
         Back to dashboard

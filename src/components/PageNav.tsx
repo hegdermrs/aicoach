@@ -12,7 +12,7 @@ interface PageNavProps {
 }
 
 export function PageNav({
-  backHref = "/",
+  backHref = "/dashboard",
   backLabel = "Back to dashboard",
   items = [],
 }: PageNavProps) {
