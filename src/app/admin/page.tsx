@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { Header } from "@/components/Header";
 import { AdminTable } from "@/components/AdminTable";
 import { InviteCodesPanel } from "@/components/InviteCodesPanel";
+import { ResetProgressButton } from "@/components/ResetProgressButton";
 import { PageNav } from "@/components/PageNav";
 import { isCoachAdmin } from "@/lib/admin";
 import {
@@ -86,6 +87,8 @@ where email = '${user.email}';`}
         />
 
         <InviteCodesPanel codes={inviteCodes} />
+
+        <ResetProgressButton />
 
         <div>
           <div className="mb-8">

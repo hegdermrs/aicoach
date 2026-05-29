@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import type { Tier } from "@/lib/types";
+import { isCoachAdmin } from "@/lib/admin";
 import { getProfile } from "@/lib/data";
 
 export async function completePrep(
@@ -179,4 +180,41 @@ export async function createInviteCode(input: {
 
   revalidatePath("/admin");
   return { success: true, code };
+}
+
+export async function resetAdminPrepProgress() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) {
+    return { error: "Not authenticated" };
+  }
+
+  const profile = await getProfile();
+
+  if (!isCoachAdmin(profile, user.email)) {
+    return { error: "Unauthorized" };
+  }
+
+  const admin = createAdminClient();
+  const { data, error } = await admin
+    .from("prep_completions")
+    .delete()
+    .eq("user_id", user.id)
+    .select("id");
+
+  if (error) {
+    return { error: error.message };
+  }
+
+  revalidatePath("/admin");
+  revalidatePath("/dashboard");
+
+  for (let week = 1; week <= 12; week++) {
+    revalidatePath(`/prep/${week}`);
+  }
+
+  return { success: true, deleted: data?.length ?? 0 };
 }
